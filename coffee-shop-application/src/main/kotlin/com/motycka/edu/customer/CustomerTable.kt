@@ -1,3 +1,4 @@
+
 package com.motycka.edu.customer
 
 import com.motycka.edu.user.UserTable

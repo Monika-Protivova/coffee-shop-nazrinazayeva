@@ -1,3 +1,4 @@
+
 package com.motycka.edu.menu
 
 import com.motycka.edu.error.UnauthorizedException

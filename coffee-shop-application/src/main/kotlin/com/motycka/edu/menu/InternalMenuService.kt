@@ -1,3 +1,4 @@
+
 package com.motycka.edu.menu
 
 import io.github.oshai.kotlinlogging.KotlinLogging
