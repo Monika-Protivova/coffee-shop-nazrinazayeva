@@ -1,3 +1,4 @@
+
 package com.motycka.edu.menu
 
 typealias MenuItemId = Long

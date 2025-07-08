@@ -1,3 +1,4 @@
+
 package com.motycka.edu.order
 
 import org.jetbrains.exposed.dao.LongEntity
@@ -6,7 +7,7 @@ import org.jetbrains.exposed.dao.id.EntityID
 import org.jetbrains.exposed.dao.id.LongIdTable
 
 object OrderItemTable : LongIdTable("order_item") {
-    val orderId = long("order_id") //.references(OrderTable.id)
+    val orderId = long("order_id").references(OrderTable.id)
     val menuItemId = long("menu_item_id")
     val quantity = integer("quantity")
 }

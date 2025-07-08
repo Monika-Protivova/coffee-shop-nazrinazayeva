@@ -1,3 +1,4 @@
+
 package com.motycka.edu.menu
 
 import com.motycka.edu.config.suspendTransaction
@@ -43,6 +44,11 @@ class MenuRepositoryImpl: MenuRepository {
         MenuItemDAO.find { notDeletedCondition and filterCondition and inIdsCondition }
             .map { it.toDTO() }
             .toSet()
+    }
+
+    override suspend fun selectAll(): List<MenuItemDTO> = suspendTransaction {
+        MenuItemDAO.find { MenuItemTable.isDeleted eq false }
+            .map { it.toDTO() }
     }
 
     override suspend fun updateMenuItem(updatedItem: MenuItemDTO): Int = suspendTransaction {

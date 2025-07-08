@@ -1,3 +1,4 @@
+
 package com.motycka.edu.menu
 
 import org.jetbrains.exposed.dao.LongEntity

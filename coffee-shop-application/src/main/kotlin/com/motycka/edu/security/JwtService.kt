@@ -1,3 +1,4 @@
+
 package com.motycka.edu.security
 
 import com.auth0.jwt.JWT
